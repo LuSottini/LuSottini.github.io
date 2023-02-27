@@ -1,0 +1,432 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+/*MENU*/
+.contenedor-header {
+    background-color: #073f59;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.contenedor-header header .logo a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 36px;
+    color: goldenrod;
+    text-decoration: none;
+}
+.contenedor-header ul{
+    display: flex;
+    list-style: none;
+}
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+.contenedor-header header nav ul li a:hover{
+    color: goldenrod;
+}
+.nav-responsive{
+    background-color: goldenrod;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+/*CV*/ 
+.contenedor{
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    min-height: 1200px;
+    background: #f5eec0;
+    margin: 100px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 1);
+}
+
+.contenedor .lateral-izquierda {
+    position: relative;
+    background: rgb(221, 184, 89);
+    padding: 40px;
+}
+.perfil{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 5px solid rgba(255,255,255,0.2);
+}
+.perfil .foto {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius:50%;
+  overflow: hidden;
+}
+.perfil .foto img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.perfil h1{
+    color: #ffffff;
+    font-size: 2em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1em;
+}
+.perfil h1 span{
+    font-size: 0.8em;
+    font-weight: 400;
+}
+.perfil .botones audio{
+    align-items: center;
+    justify-content: center;
+}
+.info-contacto{
+    padding-top:20px ;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.info-contacto h3 {
+    padding-bottom: 10px;
+}
+
+.titulo {
+    color: #073f59;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+}
+
+ul {
+    list-style:none ;
+}
+
+.info-contacto ul{
+    position: relative;
+}
+
+.info-contacto ul li .icono {
+    display:inline;
+    width: 300px;
+    font-size: 18px;
+    color: #000000;
+}
+.info-contacto ul li .texto {
+    color: #fff;
+    font-weight: 400;
+}
+.educacion {
+    padding-top: 20px;
+    border-bottom: 5px solid rgba(255,255,255,0.2);
+}
+
+.educacion h3 {
+    padding-bottom: 20px;
+}
+
+.educacion li {
+    margin-bottom: 15px;
+}
+
+.educacion h6 {
+    color: #000000;
+    font-weight: 550;
+    font-size: medium;
+}
+
+.educacion h5 {
+    color: #fff;
+    font-weight: 500;
+    font-size: medium;
+    font-style: italic;
+}
+.educacion h4 {
+    color: #fff;
+    font-weight: 700;
+    font-size: larger;
+    
+}
+.lenguaje {
+    padding-top: 5px;
+}
+.lenguaje h3 {
+    padding-bottom: 5px;
+}
+.lenguaje .texto {
+    color: #fff;
+    font-size: large;
+}
+.lenguaje .porcentaje {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #ffe3a2;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.lenguaje .porcentaje div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #073f59;
+}
+
+/**
+panel central de la derecha
+*/
+.contenedor .lateral-derecha {
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+.about{
+    margin-bottom: 50px;
+}
+.about:last-child {
+    margin-bottom: 0;
+}
+.titulo2 {
+    color: #073f59;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+p{
+    color: #333;
+    text-align: justify;
+}
+.about .box {
+    display: flex;
+    flex-direction:row;
+    margin: 20px 0;
+}
+.about .box .empresa {
+    min-width: 150px;
+}
+.about .box .empresa h5 {
+    text-transform: uppercase;
+    color: goldenrod;
+    font-weight: 500;
+}
+.about .box .texto h4 {
+    text-transform: uppercase;
+    color: #073f59;
+    font-size: 16px;
+    font-weight: bold ;
+}
+
+/*SECCION SKILLS */
+.skills{
+    background-color: #073f59;
+    color: #fff;
+    padding: 0px 20px;
+}
+.skills .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.skills h2{
+    font-size: 48px;
+    text-align: center;
+    padding: 20px 0;
+}
+.skills .fila{
+    display: flex;
+}
+.skills .fila .col{
+    width: 50%;
+    padding: 0 20px;
+}
+.skills .fila .col h3{
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+.skills .skill > span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+.skills .skill .barra-skill{
+    height: 8px;
+    width: 80%;
+    background-color: #ffe3a2;
+    position: relative;
+    margin-bottom: 30px;
+}
+.skills .skill .progreso{
+    background-color: goldenrod;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+}
+.skills .skill .barra-skill span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: goldenrod;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
+/* Esto se agregara con Js*/
+.skills .skill .javascript{
+    width: 0%;
+    animation: 2s javascript forwards;
+}
+@keyframes javascript {
+    0%{width: 0%;}
+    100%{width: 50%;}
+}
+.skills .skill .HTML5{
+    width: 0%;
+    animation: 2s HTML5 forwards;
+}
+@keyframes HTML5 {
+    0%{width: 0%;}
+    100%{width: 60%;}
+}
+.skills .skill .CSS3{
+    width: 0%;
+    animation: 2s CSS3 forwards;
+}
+@keyframes CSS3 {
+    0%{width: 0%;}
+    100%{width: 60%;}
+}
+.skills .skill .Python{
+    width: 0%;
+    animation: 2s Python forwards;
+}
+@keyframes Python {
+    0%{width: 0%;}
+    100%{width: 50%;}
+}
+.skills .skill .Photoshop{
+    width: 0%;
+    animation: 2s Photoshop forwards;
+}
+@keyframes Photoshop {
+    0%{width: 0%;}
+    100%{width: 85%;}
+}
+.skills .skill .Illustrator{
+    width: 0%;
+    animation: 2s Illustrator forwards;
+}
+@keyframes Illustrator {
+    0%{width: 0%;}
+    100%{width: 90%;}
+}
+.skills .skill .AdobeXd{
+    width: 0%;
+    animation: 2s AdobeXd forwards;
+}
+@keyframes AdobeXd{
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+.skills .skill .Figma{
+    width: 0%;
+    animation: 2s Figma forwards;
+}
+@keyframes Figma {
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+
+
+/* Seccion Responsive*/
+@media(max-width:1058px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: goldenrod;
+        width: 180px;
+
+    }
+    nav.responsive ul{
+        display: block; 
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+
+    }
+    .contenedor{
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .lateral-izquierda{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media (max-width:600px){
+    .about .box{
+        flex-direction: column;
+    }
+    .about .box .empresa{
+        margin-bottom: 5px;
+    }
+    .habilidades .box{
+        grid-template-columns: repeat(1.1fr);
+    }
+}
+
